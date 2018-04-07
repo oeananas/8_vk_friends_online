@@ -1,6 +1,8 @@
 # Watcher of Friends Online
 
-[TODO. There will be project description]
+The script for working with the site vk.com
+The program displays the names and surnames of the user friends who are online at the moment.
+For the program to work, the user needs to enter his / her login and password VK.
 
 # How to Install
 
@@ -11,6 +13,31 @@ pip install -r requirements.txt # alternatively try pip3
 ```
 
 Remember, it is recommended to use [virtualenv/venv](https://devman.org/encyclopedia/pip/pip_virtualenv/) for better isolation.
+
+# Quickstart
+
+Example of script launch on Linux, Python 3.5
+
+```bash
+python3 vk_friends_online.py
+VK Login: oeananas@mail.ru
+VK Password: 
+Your VK friends online:
+Никита Лис
+Асанi Гилязов
+Иван Старцев
+Денис Перевозчиков
+Аким Седельников
+Людмила Окулова
+Олеся Клементьева
+Антоша Нас
+Дмитрий Якимов
+Макс Байметов
+Kseniya Demonova
+Павел Аверин
+Алена Колобова
+
+```
 
 # Project Goals
 
