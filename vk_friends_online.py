@@ -21,9 +21,9 @@ def get_online_friends(login, password):
         user_password=password,
         scope='friends'
     )
-    api = vk.API(session)
-    friends_online_ids = api.friends.getOnline(v=5.52)
-    friends_online = api.users.get(v=5.52, user_ids=friends_online_ids)
+    api = vk.API(session, v=5.52)
+    friends_online_ids = api.friends.getOnline()
+    friends_online = api.users.get(user_ids=friends_online_ids)
     return friends_online
 
 
