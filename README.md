@@ -14,6 +14,8 @@ pip install -r requirements.txt # alternatively try pip3
 
 Remember, it is recommended to use [virtualenv/venv](https://devman.org/encyclopedia/pip/pip_virtualenv/) for better isolation.
 
+To get app_id, you need to register your application at https://vk.com/dev
+
 # Quickstart
 
 Example of script launch on Linux, Python 3.5
