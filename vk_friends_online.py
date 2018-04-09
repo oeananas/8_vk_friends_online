@@ -14,14 +14,14 @@ def get_user_password():
     return password
 
 
-def get_online_friends(login, password):
+def get_online_friends(login, password, api_version=5.52):
     session = vk.AuthSession(
         app_id=APP_ID,
         user_login=login,
         user_password=password,
         scope='friends'
     )
-    api = vk.API(session, v=5.52)
+    api = vk.API(session, v=api_version)
     friends_online_ids = api.friends.getOnline()
     friends_online = api.users.get(user_ids=friends_online_ids)
     return friends_online
